@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>🍭 Lollipop Demo</title>
+		<style>
+			body,
+			textarea {
+				font-family: Arial;
+				font-size: 14px;
+				color: #333;
+			}
+			[contenteditable] {
+				width: 40vw;
+				height: 320px;
+				border: 2px solid #999;
+				padding: 10px 20px;
+				overflow-y: auto;
+			}
+
+			[contenteditable]:focus {
+				outline: 0;
+			}
+
+			.container {
+				display: flex;
+				flex-direction: row;
+			}
+
+			.contenteditable-with-lpop {
+				margin-right: 20px;
+			}
+
+			.fixed-footer-element {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 100px;
+				color: #fff;
+				background: rgba(0, 0, 0, 0.8);
+				z-index: 9999;
+				padding: 20px;
+			}
+
+			/* h2::first-letter {
+				font-size: 40px;
+			} */
+		</style>
+		<link href="../../dist/lollipop/lollipop.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="contenteditable-with-lpop">
+				<h1>Content Editable with 🍭</h1>
+				<div contenteditable="true" spellcheck="false" id="contenteditable-with-lpop">
+					<h2 style="text-indent: 5px; padding-left: 5px"><span>Indented Headline</span></h2>
+					<p>
+						A US plan to deliver aid to Gaza from a floating pier at sea will be fraught with potential
+						logistical and security challenges.
+					</p>
+					<p style="font-size: 9px">
+						More than 1,000 US troops are expected to participate in the operation although the Pentagon
+						says there will be no "boots on the ground".
+					</p>
+					<p style="color: red">
+						To help achieve that, the US has partnered with a little-known private firm, Fogbow, which is
+						run by former military and intelligence officials.
+					</p>
+					<p style="color: #ddd">
+						The goal is to deliver aid equivalent to two million meals a day to Gaza, where the United
+						Nations has warned that famine is "almost inevitable" without urgent action.
+					</p>
+					<h3 style="text-align: center; text-indent: 10px">A centered headline</h3>
+					<p>I'm text with <sub>subscript</sub> and <sup>superscript</sup></p>
+					<h3 style="text-align: right; text-indent: 10px">A right-aligned headline</h3>
+					<p>
+						The goal is to deliver aid equivalent to two million meals a day to Gaza, where the United
+						Nations has warned that famine is "almost inevitable" without urgent action.
+					</p>
+					<p>
+						The goal is to deliver aid equivalent to two million meals a day to Gaza, where the United
+						Nations has warned that famine is "almost inevitable" without urgent action.
+					</p>
+					<h3 style="background: #444; color: #fff">A headline with dark background</h3>
+					<p>
+						The goal is to deliver aid equivalent to two million meals a day to Gaza, where the United
+						Nations has warned that famine is "almost inevitable" without urgent action.
+					</p>
+					<h3 style="background: #fff; filter: invert(1)">A headline with inverted colors</h3>
+					<p>
+						The goal is to deliver aid equivalent to two million meals a day to Gaza, where the United
+						Nations has warned that famine is "almost inevitable" without urgent action.
+					</p>
+					<h3 style="line-height: 40px">A headline with high line height</h3>
+					<p style="white-space: nowrap">
+						This is a very <span style="font-size: 20px">long English sentence</span> that does not
+						automatically break to the <span style="font-size: 20px">next line</span> automatically. You
+						will need to insert a line break yourself!
+					</p>
+				</div>
+			</div>
+
+			<div class="contenteditable-with-lpop">
+				<h1>Content Editable without 🍭</h1>
+				<div contenteditable="true" spellcheck="false" id="contenteditable-without-lpop"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div style="margin-left: 20vw">
+				<h1>Content Editable with no padding</h1>
+				<div
+					style="width: 300px; height: 30px; line-height: 30px; border: 1px solid #ccc; padding: 0"
+					contenteditable="true"
+					spellcheck="false"
+					id="contenteditable-without-padding"
+				></div>
+			</div>
+		</div>
+
+		<div class="fixed-footer-element">I'm a fixed footer that can appear on top of a text field</div>
+
+		<script src="../../dist/lollipop/lollipop.js"></script>
+		<script>
+			const contentEditableWithLpop = document.getElementById("contenteditable-with-lpop");
+			const contentEditableWithoutLpop = document.getElementById("contenteditable-without-lpop");
+			const contentEditableWithoutPadding = document.getElementById("contenteditable-without-padding");
+			contentEditableWithoutLpop.innerHTML = contentEditableWithLpop.innerHTML;
+
+			const lpop = new Lollipop(contentEditableWithLpop);
+			const lpop2 = new Lollipop(contentEditableWithoutPadding);
+		</script>
+	</body>
+</html>
