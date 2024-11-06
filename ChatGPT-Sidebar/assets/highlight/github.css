@@ -1,0 +1,118 @@
+.aitopia pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+.aitopia code.hljs {
+  padding: 3px 5px
+}
+/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+.aitopia .hljs,.aitopia code {
+  color: #24292e;
+  background: #ffffff
+}
+.aitopia .hljs-doctag,
+.aitopia .hljs-keyword,
+.aitopia .hljs-meta .hljs-keyword,
+.aitopia .hljs-template-tag,
+.aitopia .hljs-template-variable,
+.aitopia .hljs-type,
+.aitopia .hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #d73a49
+}
+.aitopia .hljs-title,
+.aitopia .hljs-title.class_,
+.aitopia .hljs-title.class_.inherited__,
+.aitopia .hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #6f42c1
+}
+.aitopia .hljs-attr,
+.aitopia .hljs-attribute,
+.aitopia .hljs-literal,
+.aitopia .hljs-meta,
+.aitopia .hljs-number,
+.aitopia .hljs-operator,
+.aitopia .hljs-variable,
+.aitopia .hljs-selector-attr,
+.aitopia .hljs-selector-class,
+.aitopia .hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #005cc5
+}
+.aitopia .hljs-regexp,
+.aitopia .hljs-string,
+.aitopia .hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #032f62
+}
+.aitopia .hljs-built_in,
+.aitopia .hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #e36209
+}
+.aitopia .hljs-comment,
+.aitopia .hljs-code,
+.aitopia .hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #6a737d
+}
+.aitopia .hljs-name,
+.aitopia .hljs-quote,
+.aitopia .hljs-selector-tag,
+.aitopia .hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #22863a
+}
+.aitopia .hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #24292e
+}
+.aitopia .hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold
+}
+.aitopia .hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #735c0f
+}
+.aitopia .hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #24292e;
+  font-style: italic
+}
+.aitopia .hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #24292e;
+  font-weight: bold
+}
+.aitopia .hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4
+}
+.aitopia .hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0
+}
+.aitopia .hljs-char.escape_,
+.aitopia .hljs-link,
+.aitopia .hljs-params,
+.aitopia .hljs-property,
+.aitopia .hljs-punctuation,
+.aitopia .hljs-tag {
+  /* purposely ignored */
+
+}
