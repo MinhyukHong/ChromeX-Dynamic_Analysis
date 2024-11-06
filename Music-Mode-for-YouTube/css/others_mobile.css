@@ -1,0 +1,19 @@
+/* Search for a person. eg Mozart */
+ytm-universal-watch-card-renderer .collage-image {
+  background-image: url('../img/youtube_logo.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 50% 50% !important;
+  background-color: #323232 !important;
+}
+
+/* Cover art on channel */
+.c4-tabbed-header-banner-img,
+/* albums on search */
+.simple-card-thumbnail,
+/* Image of playlist in the playlist's page */
+ytm-hero-playlist-thumbnail-renderer,
+/* Channel art */
+.c4-tabbed-header-page-header-banner {
+  display: none !important;
+}
