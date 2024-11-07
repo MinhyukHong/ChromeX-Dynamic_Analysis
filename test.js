@@ -11,7 +11,7 @@ const delay = (time) => {
 
 (async () => {
   // 압축 풀린 확장 프로그램 폴더 경로 설정(추후 데이터셋으로 대체 예정)
-  const extensionPath = path.resolve('/Users/minhyuk/Desktop/Lab/test/ChatGPT-Sidebar');
+  const extensionPath = path.resolve('/Users/minhyuk/Desktop/Lab/test/InstaSearch');
 
   // Puppeteer로 브라우저를 실행하는 코드
   const browser = await puppeteer.launch({
