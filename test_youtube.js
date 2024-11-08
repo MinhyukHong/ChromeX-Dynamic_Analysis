@@ -12,7 +12,7 @@ const delay = (time) => {
 (async () => {
   try {
     // Adblock 확장 프로그램 경로 설정
-    const extensionPath = path.resolve('/Users/minhyuk/Desktop/Lab/test/CMEDHIONKHPNAKCNDNDGJDBOHMHEPCKK_6_0_2_0');
+    const extensionPath = path.resolve('/Users/minhyuk/Desktop/Lab/test/Adblock');
 
     // Puppeteer로 브라우저를 실행하는 코드
     const browser = await puppeteer.launch({
