@@ -78,6 +78,5 @@ def main():
                 
                 # 확장 프로그램 다운로드
                 download_extension(extension_id, latest_version, file_type="CRX")
-            break
 if __name__ == "__main__":
     main()
